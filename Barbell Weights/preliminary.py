@@ -1,13 +1,6 @@
 while True:
 
     barbell = 45
-    fortyfivelbsplate = 45
-    thirtyfivelbsplate = 35
-    twentyfivelbsplate = 25
-    tenlbsplate = 10
-    fivelbsplate = 5
-    twopointfivelbsplate = 2.5
-    W2A = 0
 
     #the number of times a plate is used
     n45lbs = 0
