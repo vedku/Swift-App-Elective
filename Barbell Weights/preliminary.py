@@ -32,5 +32,10 @@ while True:
     weight -= n5lbs*10
     n2pt5lbs = int(str(weight/5)[0])
     weight -= n2pt5lbs*5
-    
-    print("You need to add", n45lbs, "45lb plates on either side,", n35lbs, "35lb plates on either side,", n25lbs,  "25lb plates on either side,", n10lbs, "10lb plates on either side,", n5lbs, "5lb plates on either side, and", n2pt5lbs, "2.5lb plates on either side.")
+
+    print("You need to add", n45lbs, "45lb plates on either side")
+    print("You need to add", n35lbs, "35lb plates on either side")
+    print("You need to add", n25lbs, "25lb plates on either side")
+    print("You need to add", n10lbs, "10lb plates on either side")
+    print("You need to add", n5lbs, "5lb plates on either side")
+    print("You need to add", n2pt5lbs, "2.5lb plates on either side")
