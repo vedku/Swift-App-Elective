@@ -20,14 +20,24 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
                 .border(.green, width: 4)
                 .keyboardType(.decimalPad)
-            Text("\(weight-45 , specifier: "%.2f")")
-                .padding()
             let n45lbs = weight/90
+            let weight = weight - n45lbs*90
+            
             let n35lbs = weight/70
+            let weight = weight - n35lbs*70
+            
             let n25lbs = weight/50
+            let weight = weight - n25lbs*50
+            
             let n10lbs = weight/20
+            let weight = weight - n10lbs*20
+            
             let n5lbs = weight/10
+            let weight = weight - n5lbs*10
+            
             let n2pt5lbs = weight/5
+            let weight = weight - n2pt5lbs*5
+            
             Text(String(n45lbs))
             Text(String(n35lbs))
             Text(String(n25lbs))
