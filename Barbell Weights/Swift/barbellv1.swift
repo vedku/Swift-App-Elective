@@ -7,16 +7,21 @@ struct ContentView: View {
     @State var n10lbs = 0
     @State var n5lbs = 0
     @State var n2pt5lbs = 0
-    @State var weight = []
+    @State var weight = 0
     
-    var body: some View{
-        VStack{
+    var body: some View {
+        VStack {
             Text("How much weight do you want to lift?")
-                .font(.title    )
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .padding()
         }
-        HStack{
-            TextField("Input here", value: $n45lbs, format: .number)
-            Text(String())
+        HStack {
+            TextField("Input here", value: $weight, format: .number)
+                .textFieldStyle(.roundedBorder)
+                .border(.green, width: 4)
+                .keyboardType(.decimalPad)
+            Text("\(weight*2, specifier: "%.2f")")
+                .padding()
         }
     }
 }
