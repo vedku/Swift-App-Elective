@@ -14,13 +14,26 @@ struct ContentView: View {
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .padding()
         }
+        
         HStack {
             TextField("Input here", value: $weight, format: .number)
                 .textFieldStyle(.roundedBorder)
                 .border(.green, width: 4)
                 .keyboardType(.decimalPad)
-            Text("\(weight*2, specifier: "%.2f")")
+            Text("\(weight-45 , specifier: "%.2f")")
                 .padding()
+            let n45lbs = weight/90
+            let n35lbs = weight/70
+            let n25lbs = weight/50
+            let n10lbs = weight/20
+            let n5lbs = weight/10
+            let n2pt5lbs = weight/5
+            Text(String(n45lbs))
+            Text(String(n35lbs))
+            Text(String(n25lbs))
+            Text(String(n10lbs))
+            Text(String(n5lbs))
+            Text(String(n2pt5lbs))
         }
     }
 }
