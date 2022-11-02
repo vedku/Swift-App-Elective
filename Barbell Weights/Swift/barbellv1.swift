@@ -24,23 +24,24 @@ struct ContentView: View {
             
         }
             Button("Calculate!"){
-                let n45lbs = weight/90
-                weight = weight - n45lbs*90
+                weightCalc = weight
+                n45lbs = weightCalc/90
+                weightCalc = weightCalc - n45lbs*90
                 
-                let n35lbs = weight/70
-                weight = weight - n35lbs*70
+                n35lbs = weightCalc/70
+                weightCalc = weightCalc - n35lbs*70
                 
-                let n25lbs = weight/50
-                weight = weight - n25lbs*50
+                n25lbs = weightCalc/50
+                weightCalc = weightCalc - n25lbs*50
                 
-                let n10lbs = weight/20
-                weight = weight - n10lbs*20
+                n10lbs = weightCalc/20
+                weightCalc = weightCalc - n10lbs*20
                 
-                let n5lbs = weight/10
-                weight = weight - n5lbs*10
+                n5lbs = weightCalc/10
+                weightCalc = weightCalc - n5lbs*10
                 
-                let n2pt5lbs = weight/5
-                weight = weight - n2pt5lbs*5
+                n2pt5lbs = weightCalc/5
+                weightCalc = weightCalc - n2pt5lbs*5
             }
             HStack {
                 Text(String(n45lbs))
