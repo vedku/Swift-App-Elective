@@ -46,13 +46,31 @@ struct ContentView: View {
                 weightCalc = weightCalc - n2pt5lbs*5
             }
             VStack {
-                Text("You need to add")
+                Text("You need to add:")
+                HStack{
                 Text(String(n45lbs))
-                Text(String(n35lbs))
-                Text(String(n25lbs))
-                Text(String(n10lbs))
-                Text(String(n5lbs))
-                Text(String(n2pt5lbs))
+                    Text("45lbs plates on either side")
+                }
+                HStack{
+                    Text(String(n35lbs))
+                    Text("35lbs plates on either side")
+                }
+                HStack{
+                    Text(String(n25lbs))
+                    Text("25lbs plates on either side")
+                }
+                HStack{
+                    Text(String(n10lbs))
+                    Text("10lbs plates on either side")
+                }
+                HStack{
+                    Text(String(n5lbs))
+                    Text("5lbs plates on either side")
+                }
+                HStack{
+                    Text(String(n2pt5lbs))
+                    Text("2.5lbs plates on either side")
+                }
             }
     }
     }
